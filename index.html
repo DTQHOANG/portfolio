@@ -231,6 +231,23 @@
   .sticky .b.tt{ background:#111118; color:#fff; }
   .sticky .b{ font-size:14px; padding:13px 10px; }
   .footnote{ text-align:center; font-size:11px; color:var(--ink-soft); padding:18px; }
+
+  /* ---------- DESKTOP ---------- */
+  @media (min-width:820px){
+    .wrap{ max-width:940px; padding-bottom:96px; }
+    .sec{ padding:42px 56px; }
+    .hero{ padding:40px 56px 46px; }
+    .contact{ padding:42px 56px 50px; }
+    .hero h1{ font-size:46px; }
+    .lead, .flag p, .ai p, .takeaway p, .think, .hero .tag{ max-width:680px; }
+    .pos{ flex-direction:row; }
+    .pos .card{ flex:1; }
+    .svc{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .flow{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .clist{ display:grid; grid-template-columns:1fr 1fr; }
+    .sec > .vcard{ max-width:560px; margin-left:auto; margin-right:auto; }
+    .sticky{ display:none; }
+  }
 </style>
 </head>
 <body>
@@ -242,8 +259,6 @@
     <div class="eyebrow" style="margin-top:6px;">Hồ sơ năng lực · Video Editor</div>
     <h1>Đào Trần<br>Quốc Hoàng</h1>
     <div class="role">Video Editor — <b>nội dung ngắn TikTok / Reels / Shorts</b> · nhận job freelance</div>
-    <p class="tag">Mình tự xây một kênh TikTok từ con số 0 lên <b>77.9K follower</b> &amp; <b>2.2M lượt thích</b>. Chuyên video nông nghiệp – đời sống và video bán hàng, giữ chân người xem đến giây cuối và biến lượt xem thành đơn hàng.</p>
-
     <div class="statrow">
       <div class="s"><div class="n">77.9K</div><div class="l">Follower</div></div>
       <div class="s"><div class="n g">2.2M</div><div class="l">Lượt thích</div></div>
@@ -270,24 +285,32 @@
 
     <div class="goal">
       <span class="gl">🎯 Mục tiêu của mình</span>
-      Tận dụng thời gian rảnh để <b>nâng cao tay nghề và tích lũy kinh nghiệm thực chiến</b>, đồng thời <b>tăng thu nhập</b> trên hành trình hướng tới <b>tự do tài chính</b>. Với mình, mỗi dự án freelance là một cơ hội để vừa học, vừa làm thật và làm nghiêm túc.
+      Tận dụng thời gian rảnh để <b>nâng cao tay nghề và tích lũy kinh nghiệm thực chiến</b>, mong nhận được <b>nhiều dự án để đồng hành lâu dài cùng khách hàng</b>. Với mình, mỗi dự án freelance là một cơ hội để vừa học, vừa làm thật và làm nghiêm túc.
     </div>
 
-    <div class="pos">
-      <div class="card">
-        <div class="icon" style="background:#E5F6EC;">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21c5-3 8-6.5 8-11a8 8 0 0 0-16 0c0 4.5 3 8 8 11Z" fill="#2E9E5B"/><path d="M12 3c0 4 1 6 4 8" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Nông nghiệp · cây trồng · đời sống</h3>
-        <p>Đúng mảng mình làm hằng ngày. Mình biến kiến thức trồng trọt thành video dễ xem, dễ lưu và đáng chia sẻ.</p>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:var(--cream2);">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 7h16l-1.5 11.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 7Z" fill="#E23A52"/><path d="M8.5 7a3.5 3.5 0 0 1 7 0" stroke="#9E2638" stroke-width="1.7" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Video bán hàng · affiliate</h3>
-        <p>Lồng sản phẩm vào câu chuyện tự nhiên, dẫn người xem tới quyết định mua mà không hề gượng ép.</p>
-      </div>
+    <div class="h2" style="font-size:18px; margin-top:26px;">Kỹ năng &amp; công cụ</div>
+    <div class="skill">
+      <div class="top"><span class="nm">CapCut</span><span class="lvl lv-pro">Thành thạo</span></div>
+      <p>Cắt nhịp, chữ động, hiệu ứng chuyển cảnh, lồng nhạc bắt trend — công cụ dựng chính của mình.</p>
+      <div class="bar"><i style="width:92%; background:var(--leaf);"></i></div>
+    </div>
+    <div class="skill">
+      <div class="top"><span class="nm">Thumbnail &amp; Brand Guideline (AI)</span><span class="lvl lv-good">Hỗ trợ</span></div>
+      <p>Làm thumbnail bằng AI Gemini và tự xây brand guideline cho kênh Vườn Sau Nhà. Kỹ năng phụ hỗ trợ cho việc dựng video.</p>
+    </div>
+    <div class="skill">
+      <div class="top"><span class="nm">Motion Graphics &amp; Explainer (AI)</span><span class="lvl lv-good">Đang khai thác</span></div>
+      <p>Dùng AI dựng hoạt hình minh hoạ kiểu Mark Rober để giải thích trực quan, sinh động.</p>
+    </div>
+    <div class="skill">
+      <div class="top"><span class="nm">Kịch bản &amp; ý tưởng</span><span class="lvl lv-dev">Đang phát triển</span></div>
+      <p>Đang rèn hook và cấu trúc giữ chân người xem — phần mình quyết tâm tiến bộ nhanh nhất.</p>
+    </div>
+
+    <div class="h2" style="font-size:18px; margin-top:24px;">Mình nhận làm</div>
+    <div class="svc">
+      <div class="s"><span class="d"></span>Video ngắn bán hàng &amp; affiliate <span style="font-weight:600; color:var(--ink-soft);">— tốt nhất ở mảng nông nghiệp</span></div>
+      <div class="s"><span class="d"></span>Motion Graphics &amp; Explainer Animation bằng AI <span style="font-weight:600; color:var(--ink-soft);">— lồng vào video bán hàng &amp; affiliate để giải thích</span></div>
     </div>
   </section>
 
@@ -315,9 +338,6 @@
         <div class="f"><div class="n">Dâu tây</div><div class="l">Ngách</div></div>
       </div>
       <p>Kênh TikTok mình tự vận hành toàn bộ: lên ý tưởng, quay, dựng và bán sản phẩm. Đây là nơi mình rèn đủ kỹ năng của một editor nội dung ngắn — từ hook, nhịp dựng, chữ động cho tới cách lồng sản phẩm để chốt đơn ngay trong video.</p>
-      <div class="tags">
-        <span>Ý tưởng &amp; nội dung</span><span>Quay</span><span>Dựng (CapCut)</span><span>Thumbnail</span><span>Bán hàng</span>
-      </div>
       <a class="btn btn-dark" href="https://www.tiktok.com/@vuonsaunha" target="_blank" rel="noopener">Xem toàn bộ kênh →</a>
     </div>
 
@@ -397,8 +417,11 @@
   <section class="sec" style="padding-top:4px;">
     <div class="eyebrow">03 — Làm theo brief &amp; tiếp thu feedback</div>
     <div class="h2">Học từ feedback<span class="dot">.</span></div>
-    <p class="lead" style="margin-top:9px; font-size:13.5px;">Đây là video mình <b>làm theo yêu cầu của người khác</b> (không thuộc kênh của mình) — một ví dụ thật về cách mình tiếp nhận góp ý và sửa tư duy, từ làm theo brief sang bám đúng mục tiêu.</p>
+    <p class="lead" style="margin-top:9px; font-size:13.5px;">Đây là <b>dự án mình làm cho team của chị Nhi Lê</b> (không thuộc kênh của mình) — một ví dụ thật về cách mình làm việc với khách: tiếp nhận góp ý và sửa tư duy, từ làm theo brief sang bám đúng mục tiêu.</p>
 
+    <div class="scrollhint">Kéo sang trái / phải để xem Trước → Sau <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+    <div class="hrow">
     <!-- TRƯỚC -->
     <div class="vcard">
       <div style="margin-bottom:13px;"><span class="phase-badge before">● Trước · chưa dùng được</span></div>
@@ -415,11 +438,6 @@
       <div class="think"><span class="lab">Tư duy lúc đó</span>Brief đưa gì thì mình làm theo đúng cái đó, chưa đặt câu hỏi <b>video này nhằm mục tiêu gì</b>.</div>
     </div>
 
-    <div class="flow-arrow">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Nhận feedback &amp; làm lại
-    </div>
-
     <!-- SAU -->
     <div class="vcard">
       <div style="margin-bottom:13px;"><span class="phase-badge after">● Sau · đã đúng mục tiêu</span></div>
@@ -434,6 +452,8 @@
       </div>
       <div class="vp">Sau khi nhận feedback, mình làm lại để <b>đi đúng mục tiêu</b>: một lời chúc mừng sinh nhật thật sự thay vì khoe.</div>
       <div class="think"><span class="lab">Tư duy lúc này</span>Hỏi trước <b>mục tiêu của video là gì</b>, nghĩ <b>big picture</b> (thông điệp tổng thể) rồi mới tới <b>small picture</b> (cảnh quay, chữ, nhịp dựng).</div>
+      <a class="tiktok-link" href="https://youtu.be/mc_UvAB4r-I" target="_blank" rel="noopener">Xem trên kênh YouTube của chị Nhi Lê ↗</a>
+    </div>
     </div>
 
     <div class="takeaway">
@@ -442,9 +462,52 @@
     </div>
   </section>
 
-  <!-- ===== 04 · QUY TRÌNH LÀM VIỆC & NHẬN DỰ ÁN ===== -->
+  <!-- ===== 04 · ỨNG DỤNG AI ===== -->
   <section class="sec" style="padding-top:4px;">
-    <div class="eyebrow">04 — Quy trình &amp; nhận job freelance</div>
+    <div class="eyebrow">04 — Ứng dụng AI</div>
+    <div class="h2">Dựng video bằng AI<span class="dot">.</span></div>
+
+    <p class="lead" style="margin-top:9px; font-size:13.5px;">Mình ứng dụng AI để dựng video giải thích trực quan (phong cách Mark Rober) — minh hoạ kỹ thuật trồng trọt và lồng vào video bán hàng cho dễ hiểu. Chạm vào từng video để xem.</p>
+
+    <div class="scrollhint">Cuộn ngang để xem thêm <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+    <div class="ai-gallery hrow">
+      <div class="ai-item">
+        <!-- THAY ID DRIVE CỦA VIDEO "RULE 3" VÀO ĐÂY -->
+        <div class="vembed r169" onclick="playYT(this,'QuVmM3DkRcg')">
+          <span class="cc2 ai">98% AI</span>
+          <img src="https://i.ytimg.com/vi/QuVmM3DkRcg/hqdefault.jpg" loading="lazy" alt="Rule 3 video AI" onerror="this.style.display='none'">
+          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="at">Rule 3 — video dựng bằng AI</div>
+        <div class="ad">Tạo <b>98% bằng AI</b>, chỉ 2% hậu kỳ (chèn chữ để video dễ hiểu hơn). <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
+      </div>
+
+      <div class="ai-item">
+        <div class="vembed r916" onclick="playYT(this,'tfGVtiF2tmY')">
+          <span class="cc2 ai">AI</span>
+          <img src="https://i.ytimg.com/vi/tfGVtiF2tmY/hqdefault.jpg" loading="lazy" alt="Hành trình của cây dâu tây cấy mô" onerror="this.style.display='none'">
+          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="at">Hành trình của cây dâu tây cấy mô</div>
+        <div class="ad">Quá trình phát triển của cây dâu tây nuôi cấy mô, minh hoạ trực quan từng bước. <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
+      </div>
+
+      <div class="ai-item">
+        <div class="vembed r169" onclick="playYT(this,'Q_AGGmZ6Ypo')">
+          <span class="cc2 ai">AI</span>
+          <img src="https://i.ytimg.com/vi/Q_AGGmZ6Ypo/hqdefault.jpg" loading="lazy" alt="Giới thiệu trang web 30 Ngày Thử Thách" onerror="this.style.display='none'">
+          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="at">Giới thiệu website “30 Ngày Thử Thách Cùng Nhi Lê”</div>
+        <div class="ad">Video giới thiệu sản phẩm / chương trình, ngắn gọn và bắt mắt. <b>Làm bằng Claude Code × Remotion.</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 05 · QUY TRÌNH LÀM VIỆC & NHẬN DỰ ÁN ===== -->
+  <section class="sec" style="padding-top:4px;">
+    <div class="eyebrow">05 — Quy trình &amp; nhận job freelance</div>
     <div class="h2">Làm việc freelance thế nào<span class="dot">.</span></div>
     <div class="statusbar"><span class="dot2"></span>Đang nhận job freelance</div>
 
@@ -470,122 +533,10 @@
     <!-- SỬA THÔNG TIN BÊN DƯỚI CHO ĐÚNG VỚI BẠN -->
     <div class="wmeta">
       <div class="wrow"><div class="wk">Hình thức</div><div class="wv">Freelance · làm online</div></div>
-      <div class="wrow"><div class="wk">Khung giờ làm việc</div><div class="wv">Buổi sáng <b>8h–13h</b> (GMT+7) — phản hồi nhanh trong khung giờ này</div></div>
+      <div class="wrow"><div class="wk">Khung giờ làm việc</div><div class="wv">Buổi sáng <b>6h–13h</b> (GMT+7) — phản hồi nhanh trong khung giờ này</div></div>
       <div class="wrow"><div class="wk">Nhận &amp; giao file</div><div class="wv">Google Drive</div></div>
       <div class="wrow"><div class="wk">Trao đổi &amp; feedback</div><div class="wv">Zalo · Facebook · Email</div></div>
       <div class="wrow"><div class="wk">Thời gian xử lý</div><div class="wv">Linh hoạt theo độ dài &amp; yêu cầu — chốt cụ thể khi nhận brief</div></div>
-    </div>
-  </section>
-
-  <!-- ===== 05 · KỸ NĂNG & CÔNG CỤ ===== -->
-  <section class="sec" style="padding-top:4px;">
-    <div class="eyebrow">05 — Kỹ năng &amp; công cụ</div>
-    <div class="h2">Mình làm được gì<span class="dot">.</span></div>
-
-    <div class="skill">
-      <div class="top"><span class="nm">CapCut</span><span class="lvl lv-pro">Thành thạo</span></div>
-      <p>Cắt nhịp, chữ động, hiệu ứng chuyển cảnh, lồng nhạc bắt trend — công cụ dựng chính của mình.</p>
-      <div class="bar"><i style="width:92%; background:var(--leaf);"></i></div>
-    </div>
-    <div class="skill">
-      <div class="top"><span class="nm">Thumbnail &amp; Brand Guideline (AI)</span><span class="lvl lv-good">Hỗ trợ</span></div>
-      <p>Làm thumbnail bằng AI Gemini và tự xây brand guideline cho kênh Vườn Sau Nhà. Kỹ năng phụ hỗ trợ cho việc dựng video.</p>
-    </div>
-    <div class="skill">
-      <div class="top"><span class="nm">Motion Graphics &amp; Explainer (AI)</span><span class="lvl lv-good">Đang khai thác</span></div>
-      <p>Dùng AI dựng hoạt hình minh hoạ kiểu Mark Rober để giải thích trực quan, sinh động.</p>
-    </div>
-    <div class="skill">
-      <div class="top"><span class="nm">Kịch bản &amp; ý tưởng</span><span class="lvl lv-dev">Đang phát triển</span></div>
-      <p>Đang rèn hook và cấu trúc giữ chân người xem — phần mình quyết tâm tiến bộ nhanh nhất.</p>
-    </div>
-  </section>
-
-  <!-- ===== 06 · THỬ NGHIỆM: VIDEO AI ===== -->
-  <section class="sec" style="padding-top:4px;">
-    <div class="eyebrow">06 — Đang thử nghiệm</div>
-    <div class="h2">Dựng video bằng AI<span class="dot">.</span></div>
-
-    <div class="ai" style="margin-top:16px;">
-      <span class="ring"></span>
-      <span class="pill">Mark Rober style · thử nghiệm</span>
-      <h3>Hoạt hình minh hoạ<br>dễ hiểu &amp; sinh động</h3>
-      <p>Đây là hướng mình đang <b>tự thử nghiệm</b>: ứng dụng AI để dựng video giải thích trực quan theo phong cách Mark Rober, chủ yếu để lồng vào video bán hàng cho dễ hiểu. Một vài bản thử bên dưới, chạm vào để xem.</p>
-    </div>
-
-    <div class="scrollhint">Cuộn ngang để xem thêm <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-
-    <div class="ai-gallery hrow">
-      <div class="ai-item">
-        <!-- THAY ID DRIVE CỦA VIDEO "RULE 3" VÀO ĐÂY -->
-        <div class="vembed r169" onclick="playYT(this,'QuVmM3DkRcg')">
-          <span class="cc2 ai">98% AI</span>
-          <img src="https://i.ytimg.com/vi/QuVmM3DkRcg/hqdefault.jpg" loading="lazy" alt="Rule 3 video AI" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Rule 3 — video dựng bằng AI</div>
-        <div class="ad">Tạo <b>98% bằng AI</b>, chỉ 2% hậu kỳ (chèn chữ để video dễ hiểu hơn).</div>
-      </div>
-
-      <div class="ai-item">
-        <div class="vembed r916" onclick="playYT(this,'tfGVtiF2tmY')">
-          <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/tfGVtiF2tmY/hqdefault.jpg" loading="lazy" alt="Hành trình của cây dâu tây cấy mô" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Hành trình của cây dâu tây cấy mô</div>
-        <div class="ad">Quá trình phát triển của cây dâu tây nuôi cấy mô, minh hoạ trực quan từng bước.</div>
-      </div>
-
-      <div class="ai-item">
-        <div class="vembed r916" onclick="playYT(this,'p3yztNabv6M')">
-          <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/p3yztNabv6M/hqdefault.jpg" loading="lazy" alt="Lí do nên chọn cây dâu tây cấy mô" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Lí do nên chọn cây dâu tây cấy mô</div>
-        <div class="ad">Vì sao cây cấy mô khoẻ, sạch bệnh và cho trái tốt hơn cây thường.</div>
-      </div>
-
-      <div class="ai-item">
-        <div class="vembed r169" onclick="playYT(this,'Q_AGGmZ6Ypo')">
-          <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/Q_AGGmZ6Ypo/hqdefault.jpg" loading="lazy" alt="Giới thiệu trang web 30 Ngày Thử Thách" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Giới thiệu website “30 Ngày Thử Thách Cùng Nhi Lê”</div>
-        <div class="ad">Video giới thiệu sản phẩm / chương trình bằng AI, ngắn gọn và bắt mắt.</div>
-      </div>
-
-      <div class="ai-item">
-        <div class="vembed r916" onclick="playYT(this,'NMob0LN6Sl4')">
-          <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/NMob0LN6Sl4/hqdefault.jpg" loading="lazy" alt="Nấm 3 màu với côn trùng trên mặt đất" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Nấm 3 màu &amp; côn trùng — trên mặt đất</div>
-        <div class="ad">Giải thích vai trò của nấm có lợi với cây trồng (phần trên mặt đất).</div>
-      </div>
-
-      <div class="ai-item">
-        <div class="vembed r916" onclick="playYT(this,'D6uskfNaEyg')">
-          <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/D6uskfNaEyg/hqdefault.jpg" loading="lazy" alt="Nấm 3 màu với côn trùng dưới mặt đất" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
-        </div>
-        <div class="at">Nấm 3 màu &amp; côn trùng — dưới mặt đất</div>
-        <div class="ad">Giải thích vai trò của nấm có lợi với cây trồng (phần dưới mặt đất).</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 07 · DỊCH VỤ ===== -->
-  <section class="sec" style="padding-top:4px;">
-    <div class="eyebrow">07 — Dịch vụ</div>
-    <div class="h2">Mình nhận làm<span class="dot">.</span></div>
-    <div class="svc">
-      <div class="s"><span class="d"></span>Video ngắn bán hàng &amp; affiliate <span style="font-weight:600; color:var(--ink-soft);">— tốt nhất ở mảng nông nghiệp</span></div>
-      <div class="s"><span class="d"></span>Motion Graphics &amp; Explainer Animation bằng AI <span style="font-weight:600; color:var(--ink-soft);">— lồng vào video bán hàng &amp; affiliate để giải thích</span></div>
     </div>
   </section>
 
