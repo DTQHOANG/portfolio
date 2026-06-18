@@ -162,6 +162,9 @@
   .hrow > *{ scroll-snap-align:start; flex:0 0 86%; max-width:300px; margin-top:0 !important; }
   .hrow.ai-gallery{ flex-direction:row; gap:14px; }
   .hrow.ai-gallery > .ai-item{ flex:0 0 80%; }
+  .hrow.ai-gallery > .ai-col{ flex:0 0 80%; max-width:300px; display:flex; flex-direction:column; gap:20px; }
+  .hrow > .ba-arrow{ flex:0 0 auto; max-width:none; align-self:center; scroll-snap-align:none; display:flex; align-items:center; justify-content:center; }
+  .ba-circle{ width:44px; height:44px; border-radius:50%; background:var(--berry); color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px rgba(226,58,82,.32); }
   .scrollhint{ display:flex; align-items:center; gap:6px; margin-top:9px; font-size:12px; font-weight:700; color:var(--berry); }
   .scrollhint svg{ animation:nudge 1.4s ease-in-out infinite; }
   @keyframes nudge{ 0%,100%{ transform:translateX(0); } 50%{ transform:translateX(4px); } }
@@ -290,9 +293,9 @@
 
     <div class="h2" style="font-size:18px; margin-top:26px;">Kỹ năng &amp; công cụ</div>
     <div class="skill">
-      <div class="top"><span class="nm">CapCut</span><span class="lvl lv-pro">Thành thạo</span></div>
-      <p>Cắt nhịp, chữ động, hiệu ứng chuyển cảnh, lồng nhạc bắt trend — công cụ dựng chính của mình.</p>
-      <div class="bar"><i style="width:92%; background:var(--leaf);"></i></div>
+      <div class="top"><span class="nm">CapCut</span><span class="lvl lv-good">Cơ bản</span></div>
+      <p>Cắt ghép, chữ động, hiệu ứng chuyển cảnh, lồng nhạc bắt trend — công cụ dựng chính của mình. Hiện mình biết dùng ở mức cơ bản và đang luyện thêm mỗi ngày.</p>
+      <div class="bar"><i style="width:58%; background:var(--gold);"></i></div>
     </div>
     <div class="skill">
       <div class="top"><span class="nm">Thumbnail &amp; Brand Guideline (AI)</span><span class="lvl lv-good">Hỗ trợ</span></div>
@@ -419,8 +422,6 @@
     <div class="h2">Học từ feedback<span class="dot">.</span></div>
     <p class="lead" style="margin-top:9px; font-size:13.5px;">Đây là <b>dự án mình làm cho team của chị Nhi Lê</b> (không thuộc kênh của mình) — một ví dụ thật về cách mình làm việc với khách: tiếp nhận góp ý và sửa tư duy, từ làm theo brief sang bám đúng mục tiêu.</p>
 
-    <div class="scrollhint">Kéo sang trái / phải để xem Trước → Sau <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-
     <div class="hrow">
     <!-- TRƯỚC -->
     <div class="vcard">
@@ -436,6 +437,10 @@
       </div>
       <div class="vp">Mục tiêu đề ra là <b>chúc mừng sinh nhật</b>, nhưng video lại giống một video khoe hơn là gửi lời chúc — nên chưa dùng được.</div>
       <div class="think"><span class="lab">Tư duy lúc đó</span>Brief đưa gì thì mình làm theo đúng cái đó, chưa đặt câu hỏi <b>video này nhằm mục tiêu gì</b>.</div>
+    </div>
+
+    <div class="ba-arrow" aria-hidden="true">
+      <span class="ba-circle"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
     </div>
 
     <!-- SAU -->
@@ -472,15 +477,27 @@
     <div class="scrollhint">Cuộn ngang để xem thêm <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
 
     <div class="ai-gallery hrow">
-      <div class="ai-item">
-        <!-- THAY ID DRIVE CỦA VIDEO "RULE 3" VÀO ĐÂY -->
-        <div class="vembed r169" onclick="playYT(this,'QuVmM3DkRcg')">
-          <span class="cc2 ai">98% AI</span>
-          <img src="https://i.ytimg.com/vi/QuVmM3DkRcg/hqdefault.jpg" loading="lazy" alt="Rule 3 video AI" onerror="this.style.display='none'">
-          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+      <!-- CỘT DỰ ÁN TEAM CHỊ NHI LÊ: Rule 3 (trên) + Giới thiệu web (dưới) -->
+      <div class="ai-col">
+        <div class="ai-item">
+          <div class="vembed r169" onclick="playYT(this,'QuVmM3DkRcg')">
+            <span class="cc2 ai">98% AI</span>
+            <img src="https://i.ytimg.com/vi/QuVmM3DkRcg/hqdefault.jpg" loading="lazy" alt="Rule 3 video AI" onerror="this.style.display='none'">
+            <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="at">Rule 3 — video dựng bằng AI</div>
+          <div class="ad">Tạo <b>98% bằng AI</b>, chỉ 2% hậu kỳ (chèn chữ để video dễ hiểu hơn). <b>Làm bằng Gemini Omni trên Google Flow</b> — dự án trong team chị Nhi Lê.</div>
         </div>
-        <div class="at">Rule 3 — video dựng bằng AI</div>
-        <div class="ad">Tạo <b>98% bằng AI</b>, chỉ 2% hậu kỳ (chèn chữ để video dễ hiểu hơn). <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
+
+        <div class="ai-item">
+          <div class="vembed r169" onclick="playYT(this,'Q_AGGmZ6Ypo')">
+            <span class="cc2 ai">AI</span>
+            <img src="https://i.ytimg.com/vi/Q_AGGmZ6Ypo/hqdefault.jpg" loading="lazy" alt="Giới thiệu trang web 30 Ngày Thử Thách" onerror="this.style.display='none'">
+            <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="at">Giới thiệu website “30 Ngày Thử Thách Cùng Nhi Lê”</div>
+          <div class="ad">Video giới thiệu sản phẩm / chương trình, ngắn gọn và bắt mắt. <b>Làm bằng Claude Code × Remotion</b> — dự án trong team chị Nhi Lê.</div>
+        </div>
       </div>
 
       <div class="ai-item">
@@ -494,13 +511,33 @@
       </div>
 
       <div class="ai-item">
-        <div class="vembed r169" onclick="playYT(this,'Q_AGGmZ6Ypo')">
+        <div class="vembed r916" onclick="playYT(this,'p3yztNabv6M')">
           <span class="cc2 ai">AI</span>
-          <img src="https://i.ytimg.com/vi/Q_AGGmZ6Ypo/hqdefault.jpg" loading="lazy" alt="Giới thiệu trang web 30 Ngày Thử Thách" onerror="this.style.display='none'">
+          <img src="https://i.ytimg.com/vi/p3yztNabv6M/hqdefault.jpg" loading="lazy" alt="Lí do nên chọn cây dâu tây cấy mô" onerror="this.style.display='none'">
           <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
         </div>
-        <div class="at">Giới thiệu website “30 Ngày Thử Thách Cùng Nhi Lê”</div>
-        <div class="ad">Video giới thiệu sản phẩm / chương trình, ngắn gọn và bắt mắt. <b>Làm bằng Claude Code × Remotion.</b></div>
+        <div class="at">Lí do nên chọn cây dâu tây cấy mô</div>
+        <div class="ad">Giải thích trực quan vì sao nên chọn cây dâu tây cấy mô. <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
+      </div>
+
+      <div class="ai-item">
+        <div class="vembed r916" onclick="playYT(this,'NMob0LN6Sl4')">
+          <span class="cc2 ai">AI</span>
+          <img src="https://i.ytimg.com/vi/NMob0LN6Sl4/hqdefault.jpg" loading="lazy" alt="Nấm 3 màu với côn trùng trên mặt đất" onerror="this.style.display='none'">
+          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="at">Nấm 3 màu với côn trùng trên mặt đất</div>
+        <div class="ad">Minh hoạ hệ sinh thái nấm &amp; côn trùng trên mặt đất. <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
+      </div>
+
+      <div class="ai-item">
+        <div class="vembed r916" onclick="playYT(this,'D6uskfNaEyg')">
+          <span class="cc2 ai">AI</span>
+          <img src="https://i.ytimg.com/vi/D6uskfNaEyg/hqdefault.jpg" loading="lazy" alt="Nấm 3 màu với côn trùng dưới mặt đất" onerror="this.style.display='none'">
+          <span class="playbtn"><svg width="22" height="22" viewBox="0 0 24 24" fill="#E23A52"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="at">Nấm 3 màu với côn trùng dưới mặt đất</div>
+        <div class="ad">Minh hoạ hệ sinh thái nấm &amp; côn trùng dưới mặt đất. <b>Làm bằng Gemini Omni trên Google Flow.</b></div>
       </div>
     </div>
   </section>
